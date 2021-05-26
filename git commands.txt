@@ -1,0 +1,23 @@
+$ git init
+git add README.md
+git commit -m "first commit"
+
+$ git config --global user.email "manoj30oct@gmail.com"
+$ git config --global user.name "Manoj"
+
+$ git remote add origin https://github.com/manoj30oct/test.git
+$ git branch -M master
+$ git push -u origin master
+
+//Set a new repository url
+$ git remote set-url origin https://github.com/manoj30oct/commands.git
+
+// If you want to change repository
+$ git remote -v
+$ git fetch origin master:tmp
+$ git rebase tmp
+
+//Remove index.lock file if giving error
+$ rm .git/index.lock
+
+$ git log
